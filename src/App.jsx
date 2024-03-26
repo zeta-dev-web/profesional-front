@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./pages/HomeScreen";
 import NavbarApp from "./components/NavbarApp";
+import FooterApp from "./components/FooterApp";
 import "./App.css";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} />
         </Routes>
-        {/* <FooterApp></FooterApp> */}
+        <FooterApp></FooterApp>
       </div>
     </BrowserRouter>
   );

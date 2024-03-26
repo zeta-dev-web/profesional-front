@@ -20,8 +20,8 @@ const NavbarApp = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container fluid className="p-0 m-0 ms-2 me-2">
+      <Navbar expand="lg" className="bg-body-tertiary pe-2">
+        <Container fluid className="p-0 m-0 ms-2">
           <Navbar.Brand href="/">
             <img
               alt="logo"

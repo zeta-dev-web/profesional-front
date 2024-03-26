@@ -8,8 +8,8 @@ import Spinner from "react-bootstrap/Spinner";
 
 import "react-toastify/dist/ReactToastify.css";
 import "../css/login.css";
-import logo from "../assets/precio.png";
-import user from "../assets/calidad.png";
+import { FaUser } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
 import pass from "../assets/precio.png";
 
 const LoginScreen = ({ darkMode, IsLoggedIn, handlesetIsLoggedIn }) => {
@@ -89,7 +89,7 @@ const LoginScreen = ({ darkMode, IsLoggedIn, handlesetIsLoggedIn }) => {
         <div className="user_card">
           <div className="d-flex justify-content-center">
             <div className="brand_logo_container">
-              <img src={logo} className="brand_logo" alt="Logo" />
+              <img src={FaUser} className="brand_logo" alt="Logo" />
             </div>
           </div>
           <div className="d-flex justify-content-center form_container mt-5">
@@ -98,7 +98,7 @@ const LoginScreen = ({ darkMode, IsLoggedIn, handlesetIsLoggedIn }) => {
                 <div className="input-group m-0">
                   <div className="input-group-append col-1 mt-2">
                     <span className="input-group-text p-0 pt-1 pb-1 ps-1">
-                      <img src={user} alt="Logo" />
+                      <FaUser className="m-1" />
                     </span>
                   </div>
                   <input
@@ -134,7 +134,7 @@ const LoginScreen = ({ darkMode, IsLoggedIn, handlesetIsLoggedIn }) => {
                 <div className="input-group m-0">
                   <div className="input-group-append col-1 mt-2">
                     <span className="input-group-text p-0 pt-1 pb-1 ps-1">
-                      <img src={pass} alt="Logo" />
+                      <RiLockPasswordFill className="m-1" />
                     </span>
                   </div>
                   <input

@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const NavbarApp = () => (
   <Navbar expand="lg" className="bg-body-tertiary">
@@ -20,17 +21,27 @@ const NavbarApp = () => (
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto text-center">
-          <Nav.Link href="searchprof" className="d-flex align-items-center">
-            Buscar un Profesional
-          </Nav.Link>
+          <Dropdown className="d-flex align-items-center">
+            <Dropdown.Toggle variant="link" className="nav-link">
+              Categorías de Profesionales
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="categoria1">Categoría 1</Dropdown.Item>
+              <Dropdown.Item href="categoria2">Categoría 2</Dropdown.Item>
+              <Dropdown.Item href="categoria3">Categoría 3</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           <Nav.Link href="gastronomia" className="d-flex align-items-center">
             Ofrecer tus servicios
           </Nav.Link>
-          <Nav.Link className="" href="login">
+          <Nav.Link className="text-start" href="login">
             <Button variant="success">Iniciar Sesion</Button>
           </Nav.Link>
+          <Nav.Link className="text-start" href="register">
+            <Button variant="success">Registrarte</Button>
+          </Nav.Link>
         </Nav>
-        <Form className="m-0 p-0 d-flex text-center ml-auto me-4">
+        <Form className="m-0 p-0 d-flex text-center ml-auto ms-1 me-4">
           <Form.Control
             type="search"
             placeholder="Buscar Profesional"

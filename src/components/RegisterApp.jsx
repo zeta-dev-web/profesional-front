@@ -43,7 +43,7 @@ const RegisterModal = ({ show, handleClose }) => {
         <Modal.Title>Registro</Modal.Title>
       </Modal.Header>
       <Modal.Body className="body-modal d-flex">
-        <Form onSubmit={handleSubmit} className="m-0">
+        <Form onSubmit={handleSubmit} className="m-0 w-100">
           {/* Selección de opción */}
           <Form.Group controlId="registerOption" className="">
             <Form.Label>Seleccione una opción:</Form.Label>

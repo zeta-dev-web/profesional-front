@@ -20,7 +20,7 @@ const NavbarApp = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary pe-2">
+      <Navbar expand="lg" className="bg-body-tertiary pe-3">
         <Container fluid className="p-0 m-0 ms-2">
           <Navbar.Brand href="/">
             <img
@@ -55,7 +55,7 @@ const NavbarApp = () => {
                 <Button variant="success">Registrarte</Button>
               </Nav.Link>
             </Nav>
-            <Form className="m-0 p-0 d-flex text-center ml-auto ms-1 me-4">
+            <Form className="m-0 pe-4 d-flex text-center ml-auto ms-1 me-4">
               <Form.Control
                 type="search"
                 placeholder="Buscar Profesional"

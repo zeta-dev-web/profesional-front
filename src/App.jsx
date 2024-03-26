@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="vh-100 vw-100 d-flex flex-column justify-content-between">
+      <div className="vh-100 vw-100 d-flex flex-column">
         <NavbarApp></NavbarApp>
         <Routes>
           <Route path="/" element={<HomeScreen />} />

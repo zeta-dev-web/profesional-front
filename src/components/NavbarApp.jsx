@@ -30,7 +30,7 @@ const NavbarApp = () => (
             <Button variant="success">Iniciar Sesion</Button>
           </Nav.Link>
         </Nav>
-        <Form className="d-flex text-center ml-auto">
+        <Form className="m-0 p-0 d-flex text-center ml-auto me-4">
           <Form.Control
             type="search"
             placeholder="Buscar Profesional"

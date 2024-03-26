@@ -25,7 +25,7 @@ const NavbarApp = () => {
           <Navbar.Brand href="/">
             <img
               alt="logo"
-              src="https://i.ibb.co/NmXYY0F/logo.png"
+              src="../src/assets/logo.png"
               width="45"
               height="45"
               className="d-inline-block"

@@ -1,7 +1,7 @@
 const cardsData = [
     { 
       titulo: 'Calidad Profesional', 
-      contenido: 'Encontra profesionales con una amplia experiencia y conocimientos en sus áreas de especialización, garantizando la más alta calidad en cada servicio.', 
+      contenido: 'Encontra profesionales con una amplia experiencia y conocimientos en sus áreas de especialización, garantizando una alta calidad.', 
       imagen: 'https://i.ibb.co/bd5ZyYz/calidad.png'
     },
     { 
